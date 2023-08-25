@@ -63,7 +63,7 @@
     // -----------------------------
     $('.timer').syotimer({
       year: 2023,
-      month: 8,
+      month: 9,
       day: 16,
       hour: 0,     // Assuming you want to start counting from midnight
       minute: 0
