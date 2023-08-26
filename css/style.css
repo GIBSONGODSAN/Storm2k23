@@ -802,7 +802,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .footer-main {
-  background: #272735;
+  background: #0b0925;
   padding: 90px 0;
 }
 @media (max-width: 767px) {
@@ -835,21 +835,21 @@ select.form-control:not([size]):not([multiple]) {
   line-height: 50px;
 }
 .footer-main .block ul.social-links-footer li a:hover {
-  background: #0B0925;
+  background: #e5b80f;
 }
 .footer-main .block ul.social-links-footer li a:hover i {
   color: #fff;
 }
 
 .subfooter {
-  background: #2a2a37;
+  background: #0b0925;
   padding: 18px 0;
 }
 .subfooter .copyright-text p {
   font-family: "Montserrat", sans-serif;
 }
 .subfooter .copyright-text p a {
-  color: #0B0925;
+  color: #e5b80f;
 }
 @media (max-width: 767px) {
   .subfooter .copyright-text {
