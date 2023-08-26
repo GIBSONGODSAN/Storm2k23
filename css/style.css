@@ -7,6 +7,7 @@
 
 /*=== MEDIA QUERY ===*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Roboto:300,400,500,700");
+
 html {
   font-size: 16px;
 }
@@ -187,7 +188,7 @@ ul.social-links li a i {
 }
 
 span.alternate {
-  color: #0B0925;
+  color: #e5b80f;
   font-style: italic;
   font-weight: 400;
 }
@@ -214,7 +215,7 @@ button:hover {
 }
 
 .bg-banner-one {
-  background: url(../images/background/homepage-one-banner.jpg) no-repeat;
+  background: url(../images/background/bg1.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -236,7 +237,7 @@ button:hover {
 }
 
 .bg-speaker {
-  background: url(../images/background/spaeker-background.jpg) fixed no-repeat;
+  background: url(../images/background/bg2.jpg) fixed no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -286,7 +287,7 @@ button:hover {
 }
 
 .bg-title {
-  background: url(../images/background/page-title-bg.jpg) no-repeat;
+  background: url(../images/background/bg3.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -296,7 +297,7 @@ button:hover {
 }
 
 .border-less {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5b80f;
 }
 
 .section-title {
@@ -480,7 +481,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 .btn-main-md:hover {
   color: #fff;
-  background: #e65c00;
+  background: #e5b80f;
 }
 .btn-main-md:focus {
   color: #fff;
@@ -537,7 +538,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .main-nav {
-  background: #fff;
+  background: #0b0925;
 }
 @media (max-width: 767px) {
   .main-nav {
@@ -546,7 +547,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 .main-nav .navbar-brand {
   padding: 35px 40px 35px 50px;
-  border-right: 1px solid #e5e5e5;
+  border-right: 1px solid #ffffff;
 }
 @media (max-width: 1200px) {
   .main-nav .navbar-brand {
@@ -569,7 +570,7 @@ select.form-control:not([size]):not([multiple]) {
 .main-nav .navbar-nav .nav-item .nav-link {
   position: relative;
   text-align: center;
-  color: #222222;
+  color: #e5b80f;
   padding-left: 5px;
   padding-right: 17px;
   padding-top: 1.2rem;
@@ -596,7 +597,7 @@ select.form-control:not([size]):not([multiple]) {
   }
 }
 .main-nav .navbar-nav .nav-item .nav-link span {
-  color: #222222;
+  color: #e5b80f;
   margin-left: 16px;
 }
 @media (max-width: 1200px) {
@@ -615,7 +616,7 @@ select.form-control:not([size]):not([multiple]) {
   }
 }
 .main-nav .navbar-nav .nav-item:hover .nav-link, .main-nav .navbar-nav .nav-item.active .nav-link {
-  color: #0B0925;
+  color: #e5b80f;
 }
 .main-nav .dropdown {
   position: relative;
@@ -714,7 +715,7 @@ select.form-control:not([size]):not([multiple]) {
   color: #0B0925;
 }
 .main-nav .ticket {
-  background: #0B0925;
+  background: #e5b80f;
   display: block;
   padding: 34px 32px;
 }
@@ -746,7 +747,7 @@ select.form-control:not([size]):not([multiple]) {
   font-size: 1.125rem;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
-  border-left: 1px solid #ffa366;
+  border-left: 1px solid #0b0925;
   padding-left: 24px;
 }
 @media (max-width: 1200px) {
@@ -810,7 +811,7 @@ select.form-control:not([size]):not([multiple]) {
   }
 }
 .footer-main .block img {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 .footer-main .block ul.social-links-footer {
   margin-bottom: 0;
@@ -985,13 +986,25 @@ select.form-control:not([size]):not([multiple]) {
   color: #fff;
   font-family: "Montserrat", sans-serif;
 }
-.banner .block h1 {
+.banner .block a h1 {
   text-transform: uppercase;
   font-size: 5.5rem;
-  color: #0B0925;
+  font-family: Iceland;
+  animation: neon5 1.5s ease-in-out infinite alternate;
+  color: #e5b80f  ;
   font-weight: 500;
   margin-bottom: 5px;
   text-shadow: 3.5px 6.062px 0px rgba(0, 0, 0, 0.1);
+}
+@keyframes neon5 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff9900,
+      0 0 70px #ff9900, 0 0 80px #ff9900, 0 0 100px #ff9900, 0 0 150px #ff9900;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff9900,
+      0 0 35px #ff9900, 0 0 40px #ff9900, 0 0 50px #ff9900, 0 0 75px #ff9900;
+  }
 }
 @media (max-width: 767px) {
   .banner .block h1 {
@@ -1424,7 +1437,8 @@ select.form-control:not([size]):not([multiple]) {
   }
 }
 .schedule .schedule-contents .schedule-item li.schedule-details .block:hover {
-  box-shadow: 0px 0px 30px 0px rgba(11, 29, 66, 0.15);
+  box-shadow: 0px 0px 30px 0px rgba(189, 149, 29, 0.15);
+  color: #e5b80f  ;
   transform: scale(1.01);
 }
 .schedule .schedule-contents .schedule-item li.schedule-details .block:hover span.name {

@@ -7,7 +7,24 @@
 
 (function ($) {
   'use strict';
-    
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+
+        console.log(entry)
+
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+
+        } else {
+
+            entry.target.classList.remove('show');
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => observer.observe(el));
   // navbarDropdown
   if ($(window).width() < 992) {
     $('.main-nav [data-toggle="dropdown"]').on('click', function () {
@@ -63,7 +80,7 @@
     // -----------------------------
     $('.timer').syotimer({
       year: 2023,
-      month: 8,
+      month: 9,
       day: 16,
       hour: 0,     // Assuming you want to start counting from midnight
       minute: 0
@@ -109,3 +126,4 @@
   });
 
 })(jQuery);
+
