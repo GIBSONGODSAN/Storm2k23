@@ -523,7 +523,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .btn-white-md {
-  background: #fff;
+  background: #e5b80f;
   color: #222222;
   padding: 15px 40px;
   border-radius: 0;
@@ -533,6 +533,16 @@ select.form-control:not([size]):not([multiple]) {
   color: #fff;
 }
 
+.btn-black-md {
+  background: #fff;
+  color: black;
+  padding: 15px 40px;
+  border-radius: 0;
+}
+.btn-black-md:hover {
+  background: #e5b80f;
+  color: black;
+}
 .btn-rounded-icon {
   border-radius: 100px;
   color: #fff;
