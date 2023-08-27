@@ -16,6 +16,9 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+a {
+  text-decoration: none; /* Remove underlines */
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
@@ -215,7 +218,7 @@ button:hover {
 }
 
 .bg-banner-one {
-  background: url(../images/background/bg1g.gif) no-repeat;
+  background: url(../images/background/bg1.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
 }
